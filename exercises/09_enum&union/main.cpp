@@ -37,14 +37,7 @@ ColorEnum convert_by_pun(Color c) {
 
     TypePun pun;
     // TODO: 补全类型双关转换
-        switch (pun.c) {
-        case Color::Red:    pun.e = COLOR_RED; break;
-        case Color::Green:  pun.e = COLOR_GREEN; break;
-        case Color::Yellow: pun.e = COLOR_YELLOW; break;
-        case Color::Blue:   pun.e = COLOR_BLUE; break;
-        default:             throw std::invalid_argument("Invalid color enum value");
-    }
-    return pun.e;
+    return static_cast<ColorEnum>(static_cast<int>(c));
 }
 
 int main(int argc, char **argv) {
