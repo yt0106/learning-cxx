@@ -1,4 +1,4 @@
-﻿﻿#include "../exercise.h"
+﻿#include "../exercise.h"
 #include <string>
 
 // READ: 字符串 <https://zh.cppreference.com/w/cpp/string/basic_string>

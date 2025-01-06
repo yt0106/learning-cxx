@@ -1,4 +1,4 @@
-﻿﻿#include "../exercise.h"
+﻿#include "../exercise.h"
 #include <array>
 #include <cstring>
 

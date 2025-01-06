@@ -1,4 +1,4 @@
-﻿﻿#include "../exercise.h"
+﻿#include "../exercise.h"
 #include <vector>
 
 // READ: std::vector <https://zh.cppreference.com/w/cpp/container/vector_bool>
