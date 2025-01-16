@@ -20,7 +20,7 @@ std::vector<udim> strides(std::vector<udim> const &shape) {
     if (shape.empty()) return strides;// 如果形状为空，则返回空步长。
 
     udim total_size = 1;// 用于计算总大小
-    for (int i = shape.size() - 1; i >= 0; --i) {
+    for (auto i = shape.size() - 1; i <shape.size(); --i) {
         strides[i] = total_size;// 第 i 维的步长
         total_size *= shape[i]; // 更新总大小为当前维度的大小
     }

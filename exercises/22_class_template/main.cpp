@@ -37,12 +37,15 @@ struct Tensor4D {
                         // 计算具体的索引
                         unsigned int idx = ((i * shape[1] + j) * shape[2] + k) * shape[3] + l;
 
-                        // 计算 others 的数据索引
-                        unsigned int other_i = (i < others.shape[0]) ? i : 0;
-                        unsigned int other_j = (j < others.shape[1]) ? j : 0;
-                        unsigned int other_k = (k < others.shape[2]) ? k : 0;
-                        unsigned int other_l = (l < others.shape[3]) ? l : 0;
-
+                        // // 计算 others 的数据索引
+                        // unsigned int other_i = (i < others.shape[0]) ? i : 0;
+                        // unsigned int other_j = (j < others.shape[1]) ? j : 0;
+                        // unsigned int other_k = (k < others.shape[2]) ? k : 0;
+                        // unsigned int other_l = (l < others.shape[3]) ? l : 0;
+                        unsigned int other_i =  i ;
+                        unsigned int other_j =  j ;
+                        unsigned int other_k =  k ;
+                        unsigned int other_l = l ;
                         // 处理 broadcast
                         if (others.shape[0] == 1) { other_i = 0; }
                         if (others.shape[1] == 1) { other_j = 0; }
